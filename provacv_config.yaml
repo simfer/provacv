@@ -1,0 +1,12 @@
+apiVersion: ai.sap.com/v1alpha1
+kind: ServingTemplate
+metadata:
+  name: sap-cv-package-tutorial-obj-detection-train
+  image: "simmacoferriero617/sap-cv-package-object-detection-train:0.0.1"
+  labels:
+    scenarios.ai.sap.com/id: "sap-cv-package-tutorial"
+    ai.sap.com/version: "0.0.1"
+  annotations:
+    scenarios.ai.sap.com/name: "SAP CV Package Tutorial"
+    imagePullSecret: credstutorialrepo
+    objectStoreSecret: my-s3-secret1
